@@ -1,8 +1,8 @@
 ## Instalar extensiones
 
-- Css peek, para poder hacer un go to a la clase
-- IntelliSense for CSS class names in HTML, autocompletado de las clases
-- Landmarks Secciones importantes de nuestro html
+- Css peek, para poder hacer un go to a la clase.
+- IntelliSense for CSS class names in HTML, autocompletado de las clases.
+- Landmarks Secciones importantes de nuestro html.
 
 ## Problemas en nuestro codigo actual
 - Archivos de estilos extenso
@@ -53,7 +53,7 @@ Se utilizara en kebab-case, porque en mac no diferencia entre mayusculas o minus
 ## Flexible Box Layout Module
 Las propiedades usadas son display:flex y display:inline-flex, se comporta como elementos en bloque y elementos en linea.
 
-La diferencia  es que el flex container seria agruparia a los elementos.
+La diferencia  es que el flex container agrupa a los elementos.
 
 El contenedor se llamaria flex container y los elementos hijos serian los flex items.
 
@@ -65,5 +65,58 @@ El contenedor se llamaria flex container y los elementos hijos serian los flex i
 </div>
 ```
 
+#### display: inline-flex
 ![display: inline-flex](img/display-inline-flex.png)
+
+#### display: flex
 ![display: flex](img/display-flex.png)
+
+
+## Flex Layout Box Model
+
+
+![Flex Layout Box Model](img/flex-layout-box-model.png)
+
+### Ejes
+Segun el modo se definira cual es el eje principal o eje transversal.
+
+- Por defecto <pre>writing-mode: horizontal-tb<pre/>
+![Alt text](img/axis-horizontal.png)
+
+- Aplicando <pre>writing-mode: vertical-rl<pre/>
+![Alt text](img/axis-vertical.png)
+
+- Tambien existen estas alineaciones
+
+![Alt text](img/axis-i-d.png)
+
+![Alt text](img/axis-a-a.png)
+
+### Tamanos
+Aqui tambien sigue el mismo patron que ejes, no existe eje x ni y.
+
+![Alt text](img/flex-size.png)
+
+Ejemplo:
+
+```css
+.box {
+  block-size: 300px;
+}
+
+.box > .box{
+  block-size: auto;
+}
+```
+
+Los hijos toman el alto del padre.
+
+![Alt text](img/flex-size.png)
+
+### Alineaciones
+
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
